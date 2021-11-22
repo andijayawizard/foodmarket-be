@@ -16,7 +16,7 @@ class UserController extends Controller
     public function login(Request $request) {
         try {
             $request->validate([
-                'email'=>'emailrequired',
+                'email'=>'email|required',
                 'password'=>'required'
             ]);
 
